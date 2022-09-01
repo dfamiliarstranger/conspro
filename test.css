@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: rgba(61, 119, 96, 255);
+    --color-gold: rgba(252,204,1,255);
+    --color-white:#fff;
+    --color-light:#f5f5f5;
+    --color-black:#0f0f1b;
+    --color-dark:#4b4a53;
+
+    --container-width-lg:82%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--color-dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--color-black);
+}
+
+h1{
+    font-size: 4.4rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+h5{
+    font-size: 1rem;
+}
+
+.lead{
+    width: 100%;
+    line-height: 1.5;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+    margin: 3rem 0;
+}
+
+.btn {
+    background: var(--color-black);
+    color: var(--color-white);
+    display: inline-block;
+    width: fit-content;
+    padding:0.8rem 1.6rem ;
+    border: 1px transparent;
+}
+
+.btn:hover{
+    background: var(--color-light);
+    color: var(--color-black);
+    transition: 400ms ease;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover{
+    border-color: var(--color-primary);
+    background: var(--color-light);
+    color: var(--color-primary);
+}
+
+.btn-lg {
+    padding: 1.1rem, 2rem;
+    font-size: 1.2rem;
+}  
+
+/*********      forms     *************/
+nav{
+    width: 100%;
+    background-color: #0f0f1b;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav img{
+    height: 4rem;
+    width:6rem;
+}
+
+nav a{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.4rem 1.2rem;
+    border-radius:1rem;
+    font-size: 1.2rem;
+}
+
+.courses{
+    margin: 0;
+    padding: 1.8rem;
+    background-color: var(--color-primary);
+    position: relative;
+    top: 3rem;
+}
+
+.courses h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+.course-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color:var(--color-light);
+    border-radius: 1rem;
+    
+}
+
+.course-img img{
+    border-radius: 1rem;
+}
+
+.card-info{
+    padding: 1rem 2rem;
+}
+
+.card-info h3{
+    padding-bottom: .5rem;
+}
+
+.card-info p{
+    padding-bottom: .75rem;
+}
+
+/***************** EVENTS *****************/
+.gallery{
+    margin: 0rem 0rem;
+    background-color: var(--color-light);
+}
+
+.gallery h2{
+    text-align: center;
+
+}
+
+.gallery h3{
+    margin: 1rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.gallery-menu-1{
+    padding-bottom: 3rem;
+}
+
+.gallery-menu-1,.gallery-menu-2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+.gallery-image img{
+    border-radius: 1rem;
+    box-shadow: 1px 1px black;
+}
+
+.gallery-image img:hover{
+    background: transparent;
+    border-color:var(--color-primary);
+    box-shadow: 0 3rem 2rem var(--color-primary);
+    z-index: 1;
+}
+
+/*****************TUTOR*******************/
+.tutors{
+    margin: 0rem 0;
+    background-color: var(--color-primary);
+}
+
+.tutors h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--color-white);
+}
+
+.tutor-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.tutor-card{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    align-items: center;
+    margin: 2rem;
+}
+
+.tutor-img img{
+   border-radius: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: var(--color-primary);
+    padding: 1.2rem 0;
+    color: var(--color-white);
+    border-top: 1px solid var(--color-black);
+}
+
+
+/*******************MEDIA QUERIES************************/
+
+@media screen and (max-width:1024px) {
+
+    .course-menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+    
+    .course-card{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        background-color:var(--color-light);
+        border-radius: 1rem;
+        
+    }
+    
+    
+    /***************** EVENTS *****************/
+    
+    .gallery-menu-1,.gallery-menu-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 0 2rem;
+        padding: 2rem;
+    }
+    
+    /*****************TUTOR*******************/
+    
+    .tutor-menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .courses{
+        padding: 0.5rem;
+    }
+
+    .course-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 .5rem;
+    }
+    
+    .course-card{
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        background-color:var(--color-light);
+        border-radius: 1rem;
+        
+    }
+    
+    
+    /***************** EVENTS *****************/
+    
+    .gallery-menu-1,.gallery-menu-2{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+    
+    /*****************TUTOR*******************/
+    
+    .tutor-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 .5rem;
+    }
+
+    .tutor-card{
+        margin: 0.5rem;
+    }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.series{
+    
+    background-image: url(./img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+nav img{
+    width:100px;
+    height: 10%;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding:0 3rem ;
+}
+
+.hero-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.hero-left .hero-img .main-img{
+    width: 100%;
+    height: 500px;
+}
+
+.hero-left .hero-img .side{
+    position: absolute;
+    right:0 ;
+    bottom: -2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 60%;
+}
+
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hero-right h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(253,203,1);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-right h1 span{
+    color: rgb(3,101,59);
+}
+
+.hero-right p{
+    font-size: 1.5rem;
+}
+
+.hero-right a{
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    border: 2px solid #000;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #000;
+}
+
+.hero-right a:hover{
+    border:1px solid;
+    color: rgb(253,203,1);
+}
+
+.f-end{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.f-end-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.f-end-top-txt{
+    width: 60%;
+}
+
+.f-end-top-txt h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.f-end-top-txt h4{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.f-end-top-txt h4 span{
+    color: rgb(253,203,1);
+}
+
+.f-end-top-txt .low{
+    padding-top:2rem;
+}
+
+.f-end-bottom{
+    padding: 2rem 3rem;
+}
+
+.f-end-bottom img{
+    padding: 2rem;
+}
+
+.f-end-btn{
+    border: 1px solid rgb(253,203,1);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.f-end-btn:hover{
+    background-color: rgb(253,203,1);
+    color: #fff;
+}
+
+
+/************************Media Queries (smaller devices)*****************/
+@media screen and (max-width: 1024px) {
+    .series{
+        width: 100vw;
+        height: 100%;
+    }
+
+    nav{
+        padding: 1rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-left .hero-img .main-img{
+        height: 300px;
+    }
+    .hero-left .hero-img .side{
+        width: 40%;
+        bottom: -1rem;
+    }
+    .hero-right{
+        justify-items: center;
+        align-content: center;
+        width: 80%;
+        padding: 2rem 3rem;
+    }
+    .hero-right p{
+        font-size: 1.3rem;
+    }
+    .f-end{
+        padding: 2rem 3rem;
+    }
+    .f-end-top-txt{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+    .hero-left .hero-img .main-img{
+        height: 300px;
+    }
+    .hero-left .hero-img .side{
+        width: 70%;
+        bottom: -1rem;
+    }
+    .hero-right{
+        display: flex;
+        width: 100%;
+        padding: 2rem 1rem;
+        justify-items: center;
+        align-content: center;
+    }
+    .hero-right h1{
+        font-size: 1.5rem;
+    }
+    .hero-right p{
+        font-size: 1rem;
+    }
+    .f-end{
+        padding: 3rem 1rem;
+    }
+    .f-end-top-txt{
+        width: 100%;
+    }
+    .f-end-top-txt h2{
+        font-size: 1.3rem;
+    }
+    .f-end-top-txt h4{
+        font-size: 1.1rem;
+    }
+    .f-end-bottom{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    .f-end-bottom img{
+        width: 80%;
+        padding: 1rem;
+    }
+}
