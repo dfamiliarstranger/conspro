@@ -24,9 +24,16 @@ nav{
 }
 
 nav img{
+    width: 150px;
+    height: 20%;
+}
+
+nav .logo-img{
     width:100px;
     height: 10%;
+    padding-top: 1rem;
 }
+
 
 .hero{
     display: flex;
@@ -66,6 +73,7 @@ nav img{
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding-bottom: 3rem;
 }
 
 .hero-right h1{
@@ -205,7 +213,15 @@ nav img{
 }
 
 @media screen and (max-width: 600px){
+    nav img{
+        width: 100px;
+        height: 10%;
+    }
     
+    nav .logo-img{
+        width:70px;
+        height: 8%;
+    }
     .hero-left .hero-img .main-img{
         height: 300px;
     }
@@ -227,7 +243,7 @@ nav img{
         font-size: 1rem;
     }
     .f-end{
-        padding: 3rem 1rem;
+        padding: 3rem 2rem;
     }
     .f-end-top-txt{
         width: 100%;
