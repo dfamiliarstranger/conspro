@@ -223,13 +223,17 @@ nav .logo-img{
         width:70px;
         height: 8%;
     }
+
+    .hero-left .hero-img {
+        height: 100%;
+        width: 100%;
+    }
+
     .hero-left .hero-img .main-img{
-        height: 300px;
+        height: 80%;
+        
     }
-    .hero-left .hero-img .side{
-        width: 70%;
-        bottom: -1rem;
-    }
+    
     .hero-right{
         display: flex;
         width: 100%;
